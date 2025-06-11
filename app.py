@@ -67,7 +67,7 @@ def criar_pipeline_rag(_qdrant_client, _embeddings_model, _llm_model, collection
     Você é um assistente de IA especializado em fornecer informações sobre a prescrição de antimicrobianos para médicos.
     Sua tarefa é responder à pergunta do usuário de forma clara, concisa e precisa, baseando-se EXCLUSIVAMENTE no contexto fornecido. Estruture sua resposta em tópicos para facilitar a compreensão do usuário.
     Se a informação necessária para responder à pergunta não estiver no contexto, responda exatamente: "A informação para responder a esta pergunta não foi encontrada na base de dados."
-    Não adicione nenhuma informação que não esteja explicitamente no texto de contexto. Cite a fonte da informação se ela estiver disponível no contexto ao final da sua resposta.
+    Não adicione nenhuma informação que não esteja explicitamente no texto de contexto. Ao final da sua resposta completa, cite a fonte da informação se ela estiver disponível no contexto.
 
     Contexto:
     {context}
@@ -94,7 +94,7 @@ def criar_pipeline_rag(_qdrant_client, _embeddings_model, _llm_model, collection
 # Título da aplicação
 st.set_page_config(page_title="PseudomonIA", page_icon="🦠") # Um apelido carinhoso #teamPseudomonas
 st.title("🦠 PseudomonIA: Suporte à Prescrição de Antimicrobianos")
-st.info("Este chatbot foi desenvolvido como um projeto acadêmico e utiliza a arquitetura RAG para responder perguntas acerca do tratamento de infeções com base em uma fonte de conhecimento específica, neste caso, o 'The WHO AWaRe (Access, Watch, Reserve) antibiotic book', da Ogrnização Mundial da Saúde. As respostas não substituem o julgamento clínico.")
+st.info("Este chatbot foi desenvolvido como um projeto acadêmico e utiliza a arquitetura RAG para responder perguntas acerca do tratamento de infeções com base em uma fonte de conhecimento específica, neste caso, o "The WHO AWaRe (Access, Watch, Reserve) antibiotic book" da Ogrnização Mundial da Saúde. As respostas não substituem o julgamento clínico.")
 
 # Carrega os recursos uma única vez
 try:
