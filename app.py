@@ -1,5 +1,4 @@
-# update teste v2  
-import streamlit as st  
+import streamlit as st
 import os
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain_qdrant import Qdrant
