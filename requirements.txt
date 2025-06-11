@@ -4,3 +4,4 @@ langchain
 langchain_google_genai
 google-generativeai
 qdrant-client
+langchain-qdrant
