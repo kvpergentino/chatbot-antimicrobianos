@@ -94,7 +94,7 @@ def criar_pipeline_rag(_qdrant_client, _embeddings_model, _llm_model, collection
 
 # Título da aplicação
 st.set_page_config(page_title="PseudomonIA", page_icon="🦠") # Um apelido carinhoso #teamPseudomonas
-st.title("🦠 Chatbot para Suporte à Prescrição de Antimicrobianos")
+st.title("🦠 PseudomonIA: Suporte à Prescrição de Antimicrobianos")
 st.info("Este chatbot foi desenvolvido como um projeto acadêmico e utiliza a arquitetura RAG para responder perguntas acerca do tratamento de infeções com base em uma fonte de conhecimento específica, neste caso, o 'The WHO AWaRe (Access, Watch, Reserve) antibiotic book', da Ogrnização Mundial da Saúde. As respostas não substituem o julgamento clínico.")
 
 # Carrega os recursos uma única vez
