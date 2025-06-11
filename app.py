@@ -1,7 +1,7 @@
 import streamlit as st
 import os
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
-from langchain.vectorstores import Qdrant
+from langchain_qdrant import Qdrant
 from qdrant_client import QdrantClient
 from langchain.prompts import PromptTemplate
 from langchain.schema.runnable import RunnablePassthrough
