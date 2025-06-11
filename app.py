@@ -65,9 +65,9 @@ def criar_pipeline_rag(_qdrant_client, _embeddings_model, _llm_model, collection
 
     template = """
     Você é um assistente de IA especializado em fornecer informações sobre a prescrição de antimicrobianos para médicos.
-    Sua tarefa é responder à pergunta do usuário de forma clara, concisa e precisa, baseando-se EXCLUSIVAMENTE no contexto fornecido.
+    Sua tarefa é responder à pergunta do usuário de forma clara, concisa e precisa, baseando-se EXCLUSIVAMENTE no contexto fornecido. Estruture sua resposta em tópicos para facilitar a compreensão do usuário.
     Se a informação necessária para responder à pergunta não estiver no contexto, responda exatamente: "A informação para responder a esta pergunta não foi encontrada na base de dados."
-    Não adicione nenhuma informação que não esteja explicitamente no texto de contexto. Cite a fonte da informação se ela estiver disponível no contexto.
+    Não adicione nenhuma informação que não esteja explicitamente no texto de contexto. Cite a fonte da informação se ela estiver disponível no contexto ao final da sua resposta.
 
     Contexto:
     {context}
