@@ -1,4 +1,8 @@
 streamlit
 qdrant-client
-langchain[qdrant,google_genai]
 google-generativeai
+langchain-core
+langchain-community
+langchain-google-genai
+langchain-qdrant
+langchain
